@@ -1,0 +1,50 @@
+{
+  "validation": {
+    "split": "Validation (LB=30)",
+    "majority_class": 1,
+    "majority_class_name": "UP (1)",
+    "accuracy": 0.5274590449947885,
+    "precision": 0.5274590449947885,
+    "recall": 1.0,
+    "f1": 0.690635924705383,
+    "confusion_matrix": [
+      [
+        0,
+        209906
+      ],
+      [
+        0,
+        234301
+      ]
+    ],
+    "tn": 0,
+    "fp": 209906,
+    "fn": 0,
+    "tp": 234301,
+    "total_samples": 444207
+  },
+  "test": {
+    "split": "Test (LB=30)",
+    "majority_class": 1,
+    "majority_class_name": "UP (1)",
+    "accuracy": 0.516395159108955,
+    "precision": 0.516395159108955,
+    "recall": 1.0,
+    "f1": 0.6810825740335291,
+    "confusion_matrix": [
+      [
+        0,
+        221698
+      ],
+      [
+        0,
+        236730
+      ]
+    ],
+    "tn": 0,
+    "fp": 221698,
+    "fn": 0,
+    "tp": 236730,
+    "total_samples": 458428
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "Experiment": "Experiment A: Baseline (LB=30, Hidden=64, LR=0.001)",
+    "Lookback": 30,
+    "Hidden": 64,
+    "LR": 0.001,
+    "Best_Epoch": 3,
+    "Total_Epochs": 10,
+    "Val_Loss": 0.691,
+    "Val_Acc": 52.78,
+    "Val_Prec": 53.24,
+    "Val_Rec": 85.93,
+    "Val_F1": 0.6575
+  },
+  {
+    "Experiment": "Experiment B: Lookback=60 (LB=60, Hidden=64, LR=0.001)",
+    "Lookback": 60,
+    "Hidden": 64,
+    "LR": 0.001,
+    "Best_Epoch": 3,
+    "Total_Epochs": 10,
+    "Val_Loss": 0.691,
+    "Val_Acc": 52.79,
+    "Val_Prec": 53.26,
+    "Val_Rec": 85.91,
+    "Val_F1": 0.6575
+  },
+  {
+    "Experiment": "Experiment C: Hidden=128 (LB=30, Hidden=128, LR=0.001)",
+    "Lookback": 30,
+    "Hidden": 128,
+    "LR": 0.001,
+    "Best_Epoch": 1,
+    "Total_Epochs": 8,
+    "Val_Loss": 0.691,
+    "Val_Acc": 52.85,
+    "Val_Prec": 53.24,
+    "Val_Rec": 87.29,
+    "Val_F1": 0.6614
+  },
+  {
+    "Experiment": "Experiment D: Low LR (LB=30, Hidden=64, LR=0.0005)",
+    "Lookback": 30,
+    "Hidden": 64,
+    "LR": 0.0005,
+    "Best_Epoch": 5,
+    "Total_Epochs": 12,
+    "Val_Loss": 0.6912,
+    "Val_Acc": 52.69,
+    "Val_Prec": 53.27,
+    "Val_Rec": 83.9,
+    "Val_F1": 0.6517
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "selected_model": "Experiment C: Hidden=128 (LB=30, Hidden=128, LR=0.001)",
+  "lookback": 30,
+  "metrics": {
+    "accuracy": 0.5174880242917099,
+    "precision": 0.5187716775230522,
+    "recall": 0.9066615976006421,
+    "f1": 0.6599401966285657,
+    "confusion_matrix": [
+      [
+        22597,
+        199101
+      ],
+      [
+        22096,
+        214634
+      ]
+    ],
+    "tn": 22597,
+    "fp": 199101,
+    "fn": 22096,
+    "tp": 214634,
+    "total_samples": 458428,
+    "loss": 0.6929031597783372
+  },
+  "baseline_comparison": {
+    "lstm_accuracy": 0.5174880242917099,
+    "baseline_accuracy": 0.516395159108955,
+    "delta_accuracy": 0.0010928651827549762,
+    "lstm_f1": 0.6599401966285657,
+    "baseline_f1": 0.6810825740335291,
+    "delta_f1": -0.021142377404963386
+  }
+}

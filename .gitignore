@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Large data files - use Git LFS or download separately
+data/raw/*.csv
+data/processed/*.parquet
+models/*.pt
+models/*.joblib
