@@ -1,0 +1,162 @@
+[
+  {
+    "regime_id": "regime_1",
+    "name": "Late Bull / Low Volatility",
+    "start_date": "2015-01-01",
+    "end_date": "2017-12-31",
+    "description": "Steady secular expansion, zero-rate policy tapering, low VIX environment.",
+    "total_sequences": 329476,
+    "loss": 0.6902,
+    "accuracy": 0.5247,
+    "precision": 0.525,
+    "recall": 0.8993,
+    "f1": 0.6629,
+    "baseline_accuracy": 0.5197,
+    "baseline_f1": 0.684,
+    "delta_accuracy": 0.005,
+    "delta_f1": -0.021,
+    "confusion_matrix": [
+      [
+        18896,
+        139349
+      ],
+      [
+        17239,
+        153992
+      ]
+    ],
+    "tn": 18896,
+    "fp": 139349,
+    "fn": 17239,
+    "tp": 153992,
+    "is_out_of_sample": false
+  },
+  {
+    "regime_id": "regime_2",
+    "name": "Trade Wars & Volatility Spike",
+    "start_date": "2018-01-01",
+    "end_date": "2019-12-31",
+    "description": "US-China trade tensions, Q4 2018 liquidity crunch, and Fed policy pivot.",
+    "total_sequences": 224752,
+    "loss": 0.6901,
+    "accuracy": 0.5325,
+    "precision": 0.5366,
+    "recall": 0.9124,
+    "f1": 0.6758,
+    "baseline_accuracy": 0.5339,
+    "baseline_f1": 0.6962,
+    "delta_accuracy": -0.0014,
+    "delta_f1": -0.0204,
+    "confusion_matrix": [
+      [
+        10198,
+        94550
+      ],
+      [
+        10514,
+        109490
+      ]
+    ],
+    "tn": 10198,
+    "fp": 94550,
+    "fn": 10514,
+    "tp": 109490,
+    "is_out_of_sample": false
+  },
+  {
+    "regime_id": "regime_3",
+    "name": "COVID Crash & Rapid Stimulus Rally",
+    "start_date": "2020-01-01",
+    "end_date": "2021-12-31",
+    "description": "Unprecedented March 2020 crash followed by historic fiscal/monetary stimulus rally.",
+    "total_sequences": 231537,
+    "loss": 0.6909,
+    "accuracy": 0.529,
+    "precision": 0.5328,
+    "recall": 0.8394,
+    "f1": 0.6519,
+    "baseline_accuracy": 0.5253,
+    "baseline_f1": 0.6888,
+    "delta_accuracy": 0.0037,
+    "delta_f1": -0.0369,
+    "confusion_matrix": [
+      [
+        20376,
+        89530
+      ],
+      [
+        19529,
+        102102
+      ]
+    ],
+    "tn": 20376,
+    "fp": 89530,
+    "fn": 19529,
+    "tp": 102102,
+    "is_out_of_sample": false
+  },
+  {
+    "regime_id": "regime_4",
+    "name": "Rate Hikes & 2022 Bear Market",
+    "start_date": "2022-01-01",
+    "end_date": "2023-12-31",
+    "description": "Aggressive 500bps Fed rate hikes, 2022 bear market drawdown, followed by early disinflation recovery.",
+    "total_sequences": 233034,
+    "loss": 0.6942,
+    "accuracy": 0.5077,
+    "precision": 0.5082,
+    "recall": 0.8954,
+    "f1": 0.6484,
+    "baseline_accuracy": 0.5069,
+    "baseline_f1": 0.6728,
+    "delta_accuracy": 0.0008,
+    "delta_f1": -0.0244,
+    "confusion_matrix": [
+      [
+        12541,
+        102366
+      ],
+      [
+        12359,
+        105768
+      ]
+    ],
+    "tn": 12541,
+    "fp": 102366,
+    "fn": 12359,
+    "tp": 105768,
+    "is_out_of_sample": false
+  },
+  {
+    "regime_id": "regime_5",
+    "name": "Disinflation & GenAI Secular Rally",
+    "start_date": "2024-01-01",
+    "end_date": "2026-02-19",
+    "description": "Fed rate cuts cycle, corporate earnings resilience, and mega-cap semiconductor/AI rally.",
+    "total_sequences": 251829,
+    "loss": 0.6922,
+    "accuracy": 0.5229,
+    "precision": 0.5246,
+    "recall": 0.9145,
+    "f1": 0.6667,
+    "baseline_accuracy": 0.5218,
+    "baseline_f1": 0.6858,
+    "delta_accuracy": 0.0011,
+    "delta_f1": -0.019,
+    "confusion_matrix": [
+      [
+        11513,
+        108907
+      ],
+      [
+        11231,
+        120178
+      ]
+    ],
+    "tn": 11513,
+    "fp": 108907,
+    "fn": 11231,
+    "tp": 120178,
+    "is_out_of_sample": true
+  }
+]

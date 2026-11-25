@@ -1,0 +1,116 @@
+[
+  {
+    "fold_id": "fold_1",
+    "name": "Expanding Fold 1: Post-GFC Expansion (2015\u20132017 OOS)",
+    "description": "Trained on 2000\u20132012 (Dot-Com bust, 2008 GFC); validated on 2013\u20132014 QE recovery; evaluated out-of-sample on 2015\u20132017 late bull regime.",
+    "train_period": "2000-03-14 to 2012-12-31",
+    "val_period": "2013-01-01 to 2014-12-31",
+    "test_period": "2015-01-01 to 2017-12-31",
+    "train_sequences": 1181342,
+    "val_sequences": 213205,
+    "test_sequences": 329476,
+    "best_epoch": 3,
+    "test_loss": 0.6925,
+    "test_accuracy": 0.5158,
+    "test_precision": 0.5273,
+    "test_recall": 0.6599,
+    "test_f1": 0.5862,
+    "baseline_accuracy": 0.4803,
+    "baseline_f1": 0.0,
+    "delta_accuracy": 0.0355,
+    "delta_f1": 0.5862,
+    "confusion_matrix": [
+      [
+        56943,
+        101302
+      ],
+      [
+        58242,
+        112989
+      ]
+    ],
+    "tn": 56943,
+    "fp": 101302,
+    "fn": 58242,
+    "tp": 112989,
+    "checkpoint_path": "models/walk_forward/fold_1_lstm.pt",
+    "scaler_path": "models/walk_forward/fold_1_scaler.joblib",
+    "elapsed_seconds": 184.5
+  },
+  {
+    "fold_id": "fold_2",
+    "name": "Expanding Fold 2: Trade Wars & COVID Shock (2018\u20132021 OOS)",
+    "description": "Expanding history through 2015; validated on 2016\u20132017 rate lift-off; evaluated out-of-sample on US-China trade tensions and COVID-19 pandemic shock.",
+    "train_period": "2000-03-14 to 2015-12-31",
+    "val_period": "2016-01-01 to 2017-12-31",
+    "test_period": "2018-01-01 to 2021-12-31",
+    "train_sequences": 1503384,
+    "val_sequences": 220639,
+    "test_sequences": 456289,
+    "best_epoch": 4,
+    "test_loss": 0.6914,
+    "test_accuracy": 0.525,
+    "test_precision": 0.5365,
+    "test_recall": 0.7578,
+    "test_f1": 0.6282,
+    "baseline_accuracy": 0.4704,
+    "baseline_f1": 0.0,
+    "delta_accuracy": 0.0545,
+    "delta_f1": 0.6282,
+    "confusion_matrix": [
+      [
+        56443,
+        158211
+      ],
+      [
+        58535,
+        183100
+      ]
+    ],
+    "tn": 56443,
+    "fp": 158211,
+    "fn": 58535,
+    "tp": 183100,
+    "checkpoint_path": "models/walk_forward/fold_2_lstm.pt",
+    "scaler_path": "models/walk_forward/fold_2_scaler.joblib",
+    "elapsed_seconds": 237.6
+  },
+  {
+    "fold_id": "fold_3",
+    "name": "Expanding Fold 3: Rate Hikes & GenAI Rally (2022\u20132026 OOS)",
+    "description": "Expanding history through 2019; validated on 2020\u20132021 stimulus volatility; evaluated out-of-sample on 2022 bear market and the GenAI secular rally.",
+    "train_period": "2000-03-14 to 2019-12-31",
+    "val_period": "2020-01-01 to 2021-12-31",
+    "test_period": "2022-01-01 to 2026-02-19",
+    "train_sequences": 1948775,
+    "val_sequences": 231537,
+    "test_sequences": 484863,
+    "best_epoch": 4,
+    "test_loss": 0.6931,
+    "test_accuracy": 0.5142,
+    "test_precision": 0.5166,
+    "test_recall": 0.872,
+    "test_f1": 0.6489,
+    "baseline_accuracy": 0.5147,
+    "baseline_f1": 0.6796,
+    "delta_accuracy": -0.0004,
+    "delta_f1": -0.0307,
+    "confusion_matrix": [
+      [
+        31729,
+        203598
+      ],
+      [
+        31929,
+        217607
+      ]
+    ],
+    "tn": 31729,
+    "fp": 203598,
+    "fn": 31929,
+    "tp": 217607,
+    "checkpoint_path": "models/walk_forward/fold_3_lstm.pt",
+    "scaler_path": "models/walk_forward/fold_3_scaler.joblib",
+    "elapsed_seconds": 318.9
+  }
+]

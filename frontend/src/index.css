@@ -1,0 +1,209 @@
+/* =========================================================================
+   StockSense AI - Global Design System & Variables
+   Dark-First Fintech Palette • Clean Precision Typography • Purpose-Built UI
+   ========================================================================= */
+
+:root {
+  /* Surface Palettes */
+  --bg-base: #090D12;
+  --bg-canvas: #090D12;
+  --bg-surface: #111821;
+  --bg-card: #111821;
+  --bg-surface-elevated: #18222D;
+  --bg-surface-hover: #1E2B3A;
+  --bg-subtle: #141D27;
+  --bg-muted: #1A2432;
+
+  /* Structural Borders */
+  --border-color: #1E293B;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: #263545;
+  --border-focus: #36D399;
+
+  /* Typography */
+  --text-primary: #F4F6F8;
+  --text-secondary: #9AA6B2;
+  --text-muted: #64748B;
+  --text-dim: #475569;
+
+  /* Primary Accent: Emerald Green (Growth / Conviction) */
+  --accent-primary: #36D399;
+  --accent-primary-hover: #2EC48B;
+  --accent-emerald: #36D399;
+  --accent-bg: rgba(54, 211, 153, 0.12);
+  --accent-border: rgba(54, 211, 153, 0.28);
+  --accent-surface: rgba(54, 211, 153, 0.08);
+
+  /* Secondary Accent: AI Intelligence (Subtle Violet / Indigo) */
+  --accent-ai: #818CF8;
+  --accent-ai-hover: #6366F1;
+  --accent-ai-bg: rgba(129, 140, 248, 0.12);
+  --accent-ai-border: rgba(129, 140, 248, 0.28);
+
+  /* Financial Market Indicators */
+  --color-up: #36D399;
+  --color-up-bg: rgba(54, 211, 153, 0.12);
+  --color-up-border: rgba(54, 211, 153, 0.28);
+  --color-up-surface: rgba(54, 211, 153, 0.08);
+
+  --color-down: #F87171;
+  --color-down-bg: rgba(248, 113, 113, 0.12);
+  --color-down-border: rgba(248, 113, 113, 0.28);
+  --color-down-surface: rgba(248, 113, 113, 0.08);
+
+  /* Technical Indicator Colors */
+  --color-sma20: #F59E0B;
+  --color-sma50: #38BDF8;
+  --color-rsi: #C084FC;
+
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing & Radii */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 16px -2px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.25);
+  --shadow-panel: 0 8px 30px -4px rgba(0, 0, 0, 0.6), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+  --shadow-dropdown: 0 16px 36px -4px rgba(0, 0, 0, 0.7), 0 6px 14px -2px rgba(0, 0, 0, 0.5);
+  --shadow-glow-emerald: 0 0 20px rgba(54, 211, 153, 0.18);
+  --shadow-glow-ai: 0 0 20px rgba(129, 140, 248, 0.18);
+}
+
+/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Custom Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: #222f3e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334458;
+}
+
+/* Typography & Utility classes */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.text-up {
+  color: var(--color-up);
+}
+
+.text-down {
+  color: var(--color-down);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.badge-emerald {
+  background: var(--color-up-bg);
+  color: var(--color-up);
+  border: 1px solid var(--color-up-border);
+}
+
+.badge-ai {
+  background: var(--accent-ai-bg);
+  color: var(--accent-ai);
+  border: 1px solid var(--accent-ai-border);
+}
+
+.badge-neutral {
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.badge-up {
+  background: var(--color-up-bg);
+  color: var(--color-up);
+  border: 1px solid var(--color-up-border);
+}
+
+.badge-down {
+  background: var(--color-down-bg);
+  color: var(--color-down);
+  border: 1px solid var(--color-down-border);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
